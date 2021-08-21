@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+	font-family: 'Karla', sans-serif;
+	font-size: 100%;
+
+	/*border:  dotted red 0.5px;*/
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	width: 85%;
+	padding: 0;
+	margin: 0;
+	border-radius: 5px;
+	box-shadow: 0px 2px 11px 5px rgba(40,40,40,0.1);
+	overflow: hidden;
+}
+
+.join {
+	padding: 10px 25px;
+	background-color: white;
+}
+.join h1 {
+	font-size: 1.5rem;
+	color: hsl(218, 22%, 67%);
+}
+.join h2 {
+	margin-top: 15px;
+    margin-bottom: 0;
+	font-size: 1.2rem;
+	color: hsl(71, 73%, 54%);
+}
+.join p {
+	margin-top: 10px;
+	margin-bottom: 0;
+	line-height: 2;
+	font-size: 1rem;
+	color: hsl(218, 22%, 67%);
+}
+
+section {
+	padding: 10px 25px;
+	color: white;
+}
+section h1 {
+	font-size: 1.2rem;
+}
+.subscribe {
+	background-color: hsl(179, 62%, 43%);
+}
+.subscribe .price-text {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+.subscribe .price {
+	font-size: 2rem;
+	font-weight: 700;
+}
+.subscribe p {
+	margin: 0;
+}
+.subscribe a {
+	display: block;
+	margin: 25px 0 0;
+	padding: 15px 0;
+  	background-color: hsl(71, 73%, 54%);
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 5px;
+	box-shadow: 0px 2px 11px 5px rgba(40,40,40,0.1);
+}
+
+.whyus {
+	background-color: hsl(218, 22%, 67%);
+}
+.whyus p {
+	font-size: .95rem;
+	line-height: 1.6;
+}
+
+@media only screen and (min-width:  768px) {
+	.container {
+		max-width: 39rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: .6fr 1fr;
+	}
+	.container > * {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 2em;
+	}
+	.join {
+		grid-column: 1/3;
+	}
+	section {
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	padding-bottom: 30px;
+	}
+	section * {
+		margin-bottom: 0px;
+	}
+
+}
