@@ -3,6 +3,8 @@
 * {
 	font-family: 'Karla', sans-serif;
 	font-size: 100%;
+
+	/*border:  dotted red 0.5px;*/
 }
 
 body {
@@ -35,7 +37,7 @@ body {
 }
 .join h2 {
 	margin-top: 15px;
-    	margin-bottom: 0;
+    margin-bottom: 0;
 	font-size: 1.2rem;
 	color: hsl(71, 73%, 54%);
 }
@@ -51,7 +53,7 @@ section {
 	padding: 10px 25px;
 	color: white;
 }
-section h2 {
+section h1 {
 	font-size: 1.2rem;
 }
 .subscribe {
@@ -82,9 +84,6 @@ section h2 {
 	font-weight: 700;
 	border-radius: 5px;
 	box-shadow: 0px 2px 11px 5px rgba(40,40,40,0.1);
-}
-. subscribe a: hover {
-  	background-color: hsl(71°, 54%, 65%);
 }
 
 .whyus {
